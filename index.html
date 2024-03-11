@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">
+            Marksheet Creator
+        </h1>
+
+        <div id="form-card">
+            <form id="marksheet-form">
+                <div id="horizontal">
+                    <div id="form-group">
+                        <label>School Image</label>
+                        <input type="file" name="schoolImage" accept="Image/*" id="school-pic-info">
+                    </div>
+                    <div id="form-group">
+                        <label>School Name</label>
+                        <input type="text" name="schoolName" placeholder="Taimoor" id="school-name-input">
+                    </div>
+
+                    <div id="form-group">
+                        <label>Text</label>
+                        <input type="text" name="text" placeholder="text" id="school-name-text">
+                    </div>
+                </div>
+
+
+                <div id="horizontal">
+                    <div id="form-group">
+                        <label>Candidate Image</label>
+                        <input type="file" name="candidateName" accept="Image/*" id="student-pic-info">
+                    </div>
+                    <div id="form-group">
+                        <label>Candidate Name</label>
+                        <input type="text" name="candidateName" placeholder="Taimoor" id="student-name-text">
+                    </div>
+
+                    <div id="form-group">
+                        <label>Father Name</label>
+                        <input type="text" name="fatherName" placeholder="Khalid hussain" id="father-name-text">
+                    </div>
+                </div>
+
+                <div id="horizontal">
+                    <div id="form-group">
+                        <label>DOB</label>
+                        <input type="date" name="dob" id="dob-input">
+                    </div>
+                    <div id="form-group">
+                        <label>Gender</label>
+                        <select name="gender" id="choose-gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="form-group">
+                        <label>Class</label>
+                        <input type="number" name="class" placeholder="6" id="class-input">
+                    </div>
+                    <div id="form-group">
+                        <label>Roll</label>
+                        <input type="number" name="roll" placeholder="6" id="roll-input">
+                    </div>
+                </div>
+
+                <button id="add-subjects" type="button">Add Subjects</button>
+                <div id="dynamic-area">
+
+                </div>
+                <button id="add-generate" type="button">Genrate</button>
+            </form>
+
+        </div>
+
+        <div class="form-cardd" id="form">
+
+            <table width="100%">
+                <tr>
+                    <th width="150px"><img width="150px" src="/Practice 1 coding ott/school-logo.png" alt=""
+                            id="school-pic"></th>
+                    <td align="center">
+                        <h1 id="school-name">Islamia College</h1>
+                        <span id="school-text">Shah Taimoor</span>
+                    </td>
+
+
+                </tr>
+
+            </table>
+            <table width="100%">
+                <tr>
+                    <th width="150px" rowspan="4"><img width="150px" id="student-pic"
+                            src="/Practice 1 coding ott/avatar.jpg" alt=""></th>
+
+
+                </tr>
+                <tr>
+                    <th>Students Name</th>
+                    <td id="student-name">Shah Taimoor</td>
+                    <th width="200px">Father Name</th>
+                    <td id="father-name">Khalid Hussain</td>
+                </tr>
+                <tr>
+                    <th>DOB</th>
+                    <td id="dob">00 00 0000</td>
+                    <th>Gender</th>
+                    <td id="gender">Male</td>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <td id="class">4th</td>
+                    <th>Roll</th>
+                    <td id="roll">20000</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Subject</th>
+                    <th width="">FullMarks</th>
+                    <th colspan="2" width="">Obtained marks</th>
+
+                </tr>
+
+                <tbody id="tBody">
+
+                </tbody>
+                <tr>
+
+                    <th colspan="3" align="right">Total Marks</th>
+                    <th colspan="2" id="total-marks">0</th>
+                </tr>
+
+                <tr>
+
+                    <th colspan="3" align="right">Percentage</th>
+                    <th colspan="2" id="percentage-marks">0%</th>
+                </tr>
+                <tr>
+                    <th colspan="3" align="right">Grade</th>
+                    <th colspan="2" id="grade-marks">A</th>
+
+                </tr>
+
+            </table>
+
+
+
+            <table width="100%">
+
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 75%;
+    background-color: lightcoral;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+}
+
+#form-card{
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px 0px #ddd;
+    margin: 24px 30px;
+    padding: 24px;
+}
+
+#marksheet-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    
+}
+#horizontal{
+    display: flex;
+    gap: 24px;
+}
+
+#form-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#marksheet-form input , #choose-gender{
+    border: 1px solid black;
+    padding: 14px;
+    flex-grow: 1;
+}
+
+#add-subjects{
+    border: none;
+    background: dodgerblue;
+    color: white;
+    width: fit-content;
+    padding: 16px 32px;
+}
+
+
+th , td{
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+#add-generate{
+    border: none;
+        background: rgb(176, 30, 255);
+        color: white;
+        width: fit-content;
+        padding: 16px 32px;
+        margin-top: 10px;
+}
+
+#dynamic-area{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
